@@ -1,4 +1,4 @@
-# InspireFaceOnRK3588 相机人脸识别系统
+# InspireFace 相机人脸识别系统
 
 本项目演示了如何使用 InspireFace SDK 和 OpenCV 进行实时人脸检测、跟踪和识别。它支持从摄像头实时捕获人脸图像，提取人脸特征，并与数据库中存储的人脸进行比对识别。
 
@@ -85,32 +85,6 @@ make
 ./add_face_to_database ../model ./face_images
 ```
 
-#### 2.2 从单个图像文件添加（兼容旧版）
-
-```bash
-./add_face_to_database <模型目录路径> <人脸ID> <图像路径>
-```
-
-示例：
-```bash
-# 从图像文件添加ID为1的人脸
-./add_face_to_database ../model 1 face_image.jpg
-```
-
-#### 2.3 从摄像头实时捕获添加（兼容旧版）
-
-```bash
-./add_face_to_database <模型目录路径> <人脸ID> camera [摄像头索引]
-```
-
-示例：
-```bash
-# 从默认摄像头捕获并添加ID为2的人脸
-./add_face_to_database ../model 2 camera
-
-# 从第二个摄像头捕获并添加ID为3的人脸
-./add_face_to_database ../model 3 camera 1
-```
 
 ## 数据库管理
 
