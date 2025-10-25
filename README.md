@@ -30,8 +30,6 @@
 ├── camera_face_recognizer.cpp     # 实时人脸识别主程序
 ├── add_face_to_database.cpp       # 人脸特征导入工具
 ├── CMakeLists.txt                 # CMake 构建配置
-├── run_demo.sh                    # 一键演示脚本
-├── test_face_recognition.sh       # 人脸识别测试脚本
 ├── include/                       # InspireFace 和 InspireCV 头文件
 ├── lib/                           # InspireFace 预编译库
 ├── model/                         # 模型文件目录
@@ -101,19 +99,6 @@ database/face_features.db
 - **自动创建**：首次运行时自动创建数据库文件
 - **自动ID分配**：批量导入时自动分配递增ID
 - **高效比对**：内置高效的人脸特征比对算法
-
-## 运行演示
-
-项目提供了一键演示脚本：
-
-```bash
-./run_demo.sh <模型目录路径> [摄像头索引]
-```
-
-演示流程：
-1. 构建项目
-2. 引导用户添加人脸到数据库
-3. 启动实时人脸识别程序
 
 ## 故障排除
 
